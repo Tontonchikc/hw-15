@@ -1,0 +1,50 @@
+.body {
+    padding: 1700px;
+}
+
+.holder {
+    display: flex;
+    flex: wrap;
+    border: solid black 5px;
+    height: 600px;
+    border-radius: 10px 10px 0 0;
+}
+
+.item {
+    height: 300px;
+    width: 300px;
+}
+
+.item:nth-child(1) {
+    background-color: red;
+    flex-grow: 0.5;
+    border-radius: 5;
+    border-radius: 10px 0 0 0;
+}
+
+.item:nth-child(2) {
+    background-color: blue;
+    order: 2;
+    align-self: flex-end;
+}
+
+.item:nth-child(3) {
+    background-color: purple;
+    order: 2;
+    align-self: flex-end;
+}
+
+.item:nth-child(4) {
+    background-color: green;
+    order: 3;
+    align-self: flex-end;
+}
+
+.item:nth-child(5) {
+    background-color: yellow;
+    order: 1;
+    flex-grow: 0.5;
+    border-radius: 5;
+
+    border-radius: 0 10px 0 0;
+}
