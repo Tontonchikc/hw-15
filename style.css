@@ -1,53 +1,56 @@
 body {
-    width: 1100px;
+    width: 1050px;
 }
 
 .holder {
-    display: flex;
-    flex: wrap;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, 100px);
     border: solid black 5px;
     height: 500px;
     border-radius: 10px 10px 0 0;
-    flex-wrap: wrap;
 }
 
 .item {
     height: 245px;
-    flex-basis: 350px;
+    /* flex-basis: calc(); */
 }
 
 .item:nth-child(1) {
     background-color: red;
-    flex-grow: 10;
+    /* flex-grow: 10; */
     border-radius: 5;
     border-radius: 10px 0 0 0;
-    flex-basis: 450px;
+    /* flex-basis: 450px; */
+    flex-grow: 1;
+    grid-column: 1 / span 3;
 }
 
 .item:nth-child(2) {
     background-color: blue;
     order: 2;
-    align-self: flex-end;
-    flex-shrink: 360px;
+    /* flex-shrink: 360px; */
+    grid-column: 3 / span 2;
 }
 
 .item:nth-child(3) {
     background-color: purple;
     order: 2;
-    align-self: flex-end;
-    flex-shrink: 360px;
+    /* flex-shrink: 360px; */
+    grid-column: 1 / span 2;
 }
 
 .item:nth-child(4) {
     background-color: green;
     order: 3;
-    align-self: flex-end;
-    flex-shrink: 360px;
-
+    /* flex-shrink: 360px; */
+    grid-column: 5 / span 2;
 }
 
 .item:nth-child(5) {
     background-color: yellow;
-    flex-grow: 10;
+    /* flex-grow: 10; */
     border-radius: 0 10px 0 0;
+    flex-grow: 1;
+    grid-column: 4 / span 3;
 }
